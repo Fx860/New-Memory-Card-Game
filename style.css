@@ -6,7 +6,7 @@
 
 body {
     height: 50vh;
-    background: url(./images/Star_Wars_4.jpg);
+    background: url(./img/Star_Wars_4.jpg);
     background-size:cover;
     display: flex;
 }
