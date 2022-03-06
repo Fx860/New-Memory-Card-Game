@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 50vh;
+    background: url(./images/Star_Wars_4.jpg);
+    background-size:cover;
+    display: flex;
+}
+
+
+.memory-game {
+    width: 540px;
+    height: 440px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;  
+}
+.memory-card {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+}
+
+.memory-card:active {
+    transform: scale(.97);
+    transition: transform 0.2s;
+
+}
+
+.font-face,
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    position:absolute;
+border: 2px solid blue;
+
+}
