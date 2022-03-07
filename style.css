@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 50vh;
+    height: 100vh;
     background: url(./img/Star_Wars_4.jpg);
     background-size:cover;
     display: flex;
@@ -13,11 +13,12 @@ body {
 
 
 .memory-game {
-    width: 540px;
-    height: 440px;
+    width: 640px;
+    height: 400px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;  
+    perspective: 1000px;
 }
 .memory-card {
     width: calc(25% - 10px);
@@ -25,13 +26,19 @@ body {
     margin: 5px;
     position: relative;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .memory-card:active {
     transform: scale(.97);
     transition: transform 0.2s;
-
 }
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+  }
+
 
 .font-face,
 .back-face {
